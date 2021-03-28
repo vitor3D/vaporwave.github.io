@@ -55,10 +55,22 @@
       iframe{
         border-radius: 40px;
       }
-      button{
-        background-color: black;
-        color: whitesmoke;
-      }
+
+      #butao{
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+  }
+
+  #butao:hover{ 
+    background-color: rgb(34, 34, 34);
+width: 3%;
+transition: width 0.2s;
+  }
+
+  #butao:hover:before {
+    width:100px;
+  }
           table,tr,td{
             border: 1px solid black ; 
             color:whitesmoke ;
@@ -151,7 +163,8 @@
 </iframe>
 <br/><br/><br/>
 
-<a href="http://vaporwave.epizy.com/Vaporwave/vaporwave.html" id="button" class="button">Voltar</a>
+<button onclick="window.location.href = 'index.html'" id="butao">Voltar</button>
+
 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <table>
