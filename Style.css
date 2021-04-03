@@ -59,15 +59,18 @@ body {
       
   }
   #butao{
-    background-color: black;
+    background-color: rgb(44, 0, 46);
     color: whitesmoke;
-    border-radius: 5px;
+    border-radius: 3px;
+    border:1px solid;
+    padding: 3px 5px;
+    text-decoration: none;
   }
 
   #butao:hover{ 
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(62, 0, 87);
 width: 8%;
-transition: width 0.2s;
+transition: width 1.0s;
   }
 
   #butao:hover:before {
@@ -92,7 +95,7 @@ transition: width 0.2s;
 
   #insta:hover{
     color: whitesmoke;
-    font-size: 125%;
+    font-size: 115%;
   }
 
   #zap{
@@ -102,32 +105,9 @@ transition: width 0.2s;
 
   #zap:hover{
     color: whitesmoke;
-    font-size: 125%;
-  }
-
-  #discord{
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    color: white ;
-    font-size: 100%;
-  }
-
-  #discord:hover{
-    color: whitesmoke;
-    font-size: 125%;
+    font-size: 115%;
   }
   
-  #pingo{
-    float: left;
-    border-radius: 10px;
-    border-radius: 5px;
-    border: black;
-    width: 80px;
-    height: 80px;
-  }
   #arma{
     width: 100px;
     height: 100px;
@@ -135,33 +115,126 @@ transition: width 0.2s;
     margin-left:150;
   }
 
-  .barra {
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 35px;
-  }
-
-  .logo {
-      border-top: 20%;
-      left: 0%;
-      color:#555 5px;
-      text-decoration: none;
-      width: 100px;
-      height: 100px;
-  }
-
- .button {
-     font: bold 11px Arial;
-     text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-   border-right: 1px solid #333333;
-   border-bottom: 1px solid #333333;
-   border-left: 1px solid #CCCCCC;
-  }
-  
+  * {
+    margin: 0;
+    padding: 0;
+    }
+   
+   /*Estilizando a nav da classe menu */
+    .menu {
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    font-family: Arial;
+    }
+   
+   /*Estilizando as listas */
+    .menu ul {
+    list-style: none;
+    position: relative;
+    }
+   
+   .menu ul li {
+    width: 150px;
+    float: left;
+    }
+   
+   .menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    }
+   
+   .menu ul ul {
+    position: absolute;
+    visibility: hidden;
+    }
+   
+   .menu ul li:hover ul {
+    visibility: visible;
+    }
+   
+   .menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+    }
+   
+   .menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+    }
+   
+   .menu ul ul li a {
+    background-color: #069;
+    }
+   
+   /*Criando o label */
+    label[for=”bt_menu”]{
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+    }
+   
+   #bt_menu {
+    display: none;
+    }
+   
+   label[for=”bt_menu”]{
+    display: none;
+    }
+   
+   /*Deixando o Menu Responsivo */
+   @media(max-width: 800px) {
+   label[for=”bt_menu”] {
+    display: block;
+    }
+     
+   #bt_menu:checked ~ .menu{
+    margin-left: 0;
+    }
+     
+   .menu{
+    margin-top: 5px;
+    margin-left: -100%;
+    transition: all .4s;
+    }
+     
+   .menu ul li {
+    width: 100%;
+    float: none;
+    }
+     
+   .menu ul ul {
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 4s;
+    }
+     
+   .menu ul li:hover ul {
+    height: auto;
+    max-height: 200px;
+    }
+   } 
+    #discord {
+        background:#069;;
+        border: none;
+        font-size: 10px;
+        padding: 5px 5px;
+        width: 150px;
+        height: 47px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #discord:hover{
+       background-color: #f4f4f4;
+    color: rgb(255, 255, 255);
+    }

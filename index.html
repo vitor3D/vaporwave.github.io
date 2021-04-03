@@ -41,18 +41,43 @@
 
   </head>
       <body>
+        <input type="checkbox" id="bt_menu" />
+  <label for="bt_menu">&#9776;</label>
+<nav class="menu">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Serviços</a>
+              <ul>
+                  <li><a href="#">Não faço muita coisa.</a></li>
+                  <li><a href="#">Chama no zap</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Contato</a>
+              <ul>
+                  <li><a href="https://www.instagram.com/vitor3doficial/?hl=pt-br" id="insta" target="_blank">Instagram</a></li>
+                  <li><a href="tel:+5513997401864" id="zap" target="_blank">Whatsapp</a></li>
+                  <li><button id="discord" onclick="copyToClipboard()">Discord</button> </li>
+              </ul>
+          </li>       
+      </ul>
+  </nav>
+  <script> 
+    function copyToClipboard() {  
+   const el = document.createElement('textarea');
+   el.value = 'vitor3D#0708';
+   el.setAttribute('readonly', '');
+   el.style.position = 'absolute';
+   el.style.left = '-9999px';
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+    };
+</script>
           
-        <div class="barra"><h5> play em quanto esta no site (melhor experiencia)</h5>  </center></div> 
-        
-        </div>
-<div> 
-   <br><br><br>
-      <center>
-               <iframe width="350" height="25" src="https://www.youtube.com/embed/qqfMAf3IFE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          </center>
-              </iframe>
+
         <br>
-        <img id="pingo" src="Sem título-1 [Recuperado].png">
+       
         <br><br><br><br><br><br
 </div>
   <div id="meunome">
@@ -72,7 +97,7 @@
               </center>
       </div>
         <div>
-      <center>
+        <center>
         <h4>Bom, eu nasci em Sorocaba, morei 3 anos la . Logo depois fui para Goias, morando 5 anos la (entre Goiania e Brasilia). Agora estou em Peruibe ha 8 anos.
 
       </h4>
@@ -94,48 +119,18 @@
            </center>
    </div>
       <div>
-        
-<button onclick="window.location.href = 'tabela.html'" id="butao">Tabela</button>
-
+        <br/><br/><br/><br/><br/>
+<center>
+<a href="tabela.html" id="butao">Tabela</a>
 <br/>
-<ul>
-  <li>
-     <h3> Social midas  </h3>
-     </li>
-  <li>
-    <a href="https://www.instagram.com/vitor3doficial/?hl=pt-br" id="insta" target="_blank">Instagram</a>
-      </li>
-  <li>
-    <a href="tel:+5513997401864" id="zap" target="_blank">Whatsapp</a>
-  </li>
-       <li>
-        <button id="discord" onclick="copyToClipboard()">Discord</button>
-    </li>
-</ul>
 
-
-        <script> 
-            function copyToClipboard() {  
-           const el = document.createElement('textarea');
-           el.value = 'vitor3D#0708';
-           el.setAttribute('readonly', '');
-           el.style.position = 'absolute';
-           el.style.left = '-9999px';
-          document.body.appendChild(el);
-          el.select();
-          document.execCommand('copy');
-          document.body.removeChild(el);
-            };
-      </script>
-
-</div>
 
 <div>
       <br><br><br><br><br><br><br><br><br><br><br><br>
       <a>
     (essa pagina tem intuiro unico e excluzivo para um trabalho de escola, tudo nela esta disposto a sofrer alteracao)
       <a> 
-       
+    </center>   
       </div>
           </body>
       </html>
