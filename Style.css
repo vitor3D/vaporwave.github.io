@@ -58,26 +58,7 @@ body {
      ul { list-style-type: katakana; color: rgb(209, 209, 209); 
       
   }
-  #butao{
-    background-color: rgb(44, 0, 46);
-    color: whitesmoke;
-    border-radius: 3px;
-    border:1px solid;
-    padding: 3px 5px;
-    text-decoration: none;
-  }
-
-  #butao:hover{ 
-    background-color: rgb(62, 0, 87);
-width: 8%;
-transition: width 1.0s;
-  }
-
-  #butao:hover:before {
-    width:100px;
-    content: 'Ir para a tabela';
-  }
-
+  
 #vitor {
       text-decoration: underline black 1px;
       color: whitesmoke;
@@ -94,8 +75,9 @@ transition: width 1.0s;
   }
 
   #insta:hover{
-    color: whitesmoke;
-    font-size: 115%;
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    background: whitesmoke;
   }
 
   #zap{
@@ -104,8 +86,9 @@ transition: width 1.0s;
   }
 
   #zap:hover{
-    color: whitesmoke;
-    font-size: 115%;
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    background: whitesmoke;
   }
   
   #arma{
@@ -160,6 +143,7 @@ transition: width 1.0s;
    .menu a:hover {
     background-color: #f4f4f4;
     color: #555;
+    font-size: 120%;
     }
    
    .menu ul ul li {
@@ -168,6 +152,7 @@ transition: width 1.0s;
     }
    
    .menu ul ul li a {
+     padding: 15px 5px;
     background-color: #069;
     }
    
@@ -233,8 +218,34 @@ transition: width 1.0s;
         height: 47px;
         font-size: 15px;
         cursor: pointer;
+        color: white;
     }
+
     #discord:hover{
-       background-color: #f4f4f4;
-    color: rgb(255, 255, 255);
+       background-color: #e9e9e9;
+    color: rgb(2, 2, 2);
     }
+   
+  #tabelinha{
+    color: white;
+  background:#069;;
+  border: none;
+  font-size: 10px;
+  padding: 5px 5px;
+  width: 150px;
+  height: 43px;
+  font-size: 15px;
+  cursor: pointer;
+ }
+  #tabelinha:hover{
+    background: rgb(223, 223, 223);
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+  }
+  #seminario{
+    font-size: 15px;
+}
+#seminario:hover{
+  font-size: 120%;
+  color: #000000;
+}
